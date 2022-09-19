@@ -20,10 +20,10 @@
    python3 ustc_report.py data_test.json # 调整为自己的路径
    ```
 
-2. 通过crontab, schedule(python)等周期工具, 将上述命令写进另一任务中, 通过调用上面的命令实现定时打卡
+2. 通过crontab, schedule(python)等周期工具, 根据个人习惯和偏好打卡时间自行设置，将上述命令写进另一任务中, 通过crontab调用上面的命令实现定时打卡。
 
    ```python
-   # 如使用schedule: 将下面的代码保存为autoreport.py, 后台运行即可
+   # 如使用schedule: 将下面的代码保存为autoreport.py, 然后运行。个人不习惯这种方式，所以没有加进 ustc_report.py 中
    import os
    try:
        import schedule
@@ -38,9 +38,10 @@
    
    schedule.every().day.at("6:25").do(daka)
    schedule.every().day.at("22:25").do(daka)
+   while True:
+       schedule.run_pending()
+       time.sleep(60)
    ```
-
-   
 
 ### data.json
 
