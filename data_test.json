@@ -1,0 +1,31 @@
+{
+    "STUID"            : "SA2122",             //学号
+    "STUPW"            : "PassWord",           //密码
+    "LOCATION"         : "南校区",              //所在校区
+    "DORM_BUILDING"    : "1",                  //宿舍楼号
+    "DORM"             : "129",                //宿舍号
+    "EMERGENCY_CONTACT": "严济慈",              //紧急联系人姓名
+    "RELATIONSHIP"     : "校长",                //紧急联系人关系
+    "PHONE_NUMBER"     : "12345678901",        //紧急联系人电话
+    "REASONOFOUTING"   : {                     //报备原因
+        "1" : "实验室往返",
+        "2" : "实验室往返",
+        "3" : "实验室往返",
+        "4" : "课题组组会",
+        "5" : "南北区往返",
+        "6" : "游泳",
+        "7" : "吃夜宵"
+    },
+    "CAMPUS_TRANSFER"  : "东校区,西校区,中校区,南校区,北校区",  //跨校区
+
+    "mail_alert"       : 0,                    //是否邮件提醒
+    "mail_receivers"   : "demo@qq.com",        //收件人
+    "mail_senderhost"  : "smtp.qq.com",        //发件服务器
+    "mail_senderuser"  : "mylove@qq.com",      //发件人邮箱
+    "mail_senderpass"  : "",                   //发件人密码
+
+    "wx_alert"         : 0,                    //是否微信提醒 WxPusher
+    "wx_appToken"      : "",                   //程序单发, 与下面二选一
+    "wx_topicIds"      : "",                   //话题群发, 可不填
+    "wx_uids"          : "UID_"                //微信关注UID号
+}
